@@ -29,7 +29,7 @@ Activity label identifiying the diferent activities:
 
 SUBJECT
 
-Factor identifiying the 30 different individuals
+Factor identifiying the 30 different individuals, range 1 to 30
 
 
 ### Measures
@@ -49,7 +49,11 @@ In all the cases 2 variables are estimated:
 The dataset is an average agregation,  using mean(),  for each activity-subject.
 
 
+
 #### Body acceleration
+
+The body acceleration signal obtained by subtracting the gravity from the total acceleration gravity units. 
+
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
 
 Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
@@ -74,7 +78,8 @@ Similarly, the acceleration signal was then separated into body and gravity acce
 - tGravityAcc-std()-Z-mean()    
 
 #### Jerk signals
-Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). The units are radians/second. 
+
 
 
 - tBodyAccJerk-mean()-X-mean()       
