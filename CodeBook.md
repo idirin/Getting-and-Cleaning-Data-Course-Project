@@ -34,8 +34,13 @@ Factor identifiying the 30 different individuals
 
 ### Measures
 
-Different signals  were used to estimate variables of the feature vector for each pattern:  
+Different signals  were used to estimate variables of the feature vector for each pattern
+
 '-XYZ' is  to denote 3-axial signals in the X, Y and Z directions.
+
+Features are normalized and bounded within [-1,1].
+
+Each feature vector is a row on the text file.
 
 In all the cases 2 variables are estimated:
 - mean() (mean Value) 
