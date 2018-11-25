@@ -12,7 +12,7 @@ Steps for tidying and summaring the data are described in this repository README
 ## DATA
 Data is provided in an flat file using blank separator and  string delimiter. Header name the 68 variables describe 2 identifiers and 66 measures described below. There are 35 observations  
 
-##VARIABLES
+## VARIABLES
 
 ### Identifiers
 
@@ -21,19 +21,19 @@ ACTIVITY_LABEL
 
 Activity label identifiying the diferent activities:
 
-    -WALKING: subject was walking
-    -WALKING_UPSTAIRS: subject was walking upstairs
-    -WALKING_DOWNSTAIRS: subject was walking downstairs
-    -SITTING: subject was sitting
-    -STANDING: subject was standing
-    -LAYING: subject was laying
+    - WALKING: subject was walking
+    - WALKING_UPSTAIRS: subject was walking upstairs
+    - WALKING_DOWNSTAIRS: subject was walking downstairs
+    - SITTING: subject was sitting
+    - STANDING: subject was standing
+    - LAYING: subject was laying
 
 SUBJECT
 
 Factor identifiying the 30 different individuals
 
 
-## Measures
+### Measures
 
 Different signals  were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is  to denote 3-axial signals in the X, Y and Z directions.
@@ -45,7 +45,7 @@ In all the cases 2 variables are estimated:
 The dataset is an average agregation,  using mean(),  for each activity-subject.
 
 
-## Body acceleration
+#### Body acceleration
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. 
 
 Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise.
@@ -69,81 +69,82 @@ Similarly, the acceleration signal was then separated into body and gravity acce
 - tGravityAcc-std()-Y-mean()
 - tGravityAcc-std()-Z-mean()    
 
-
+#### Jerk signals
 Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). 
 
 
--tBodyAccJerk-mean()-X-mean()       
--tBodyAccJerk-mean()-Y-mean()      
--tBodyAccJerk-mean()-Z-mean()       
--tBodyAccJerk-std()-X-mean()       
--tBodyAccJerk-std()-Y-mean()        
--tBodyAccJerk-std()-Z-mean()       
--tBodyGyro-mean()-X-mean()          
--tBodyGyro-mean()-Y-mean()         
--tBodyGyro-mean()-Z-mean()          
--tBodyGyro-std()-X-mean()          
--tBodyGyro-std()-Y-mean()           
--tBodyGyro-std()-Z-mean()          
--tBodyGyroJerk-mean()-X-mean()      
--tBodyGyroJerk-mean()-Y-mean()     
--tBodyGyroJerk-mean()-Z-mean()      
--tBodyGyroJerk-std()-X-mean()      
--tBodyGyroJerk-std()-Y-mean()       
--tBodyGyroJerk-std()-Z-mean()  
+- tBodyAccJerk-mean()-X-mean()       
+- tBodyAccJerk-mean()-Y-mean()      
+- tBodyAccJerk-mean()-Z-mean()       
+- tBodyAccJerk-std()-X-mean()       
+- tBodyAccJerk-std()-Y-mean()        
+- tBodyAccJerk-std()-Z-mean()       
+- tBodyGyro-mean()-X-mean()          
+- tBodyGyro-mean()-Y-mean()         
+- tBodyGyro-mean()-Z-mean()          
+- tBodyGyro-std()-X-mean()          
+- tBodyGyro-std()-Y-mean()           
+- tBodyGyro-std()-Z-mean()          
+- tBodyGyroJerk-mean()-X-mean()      
+- tBodyGyroJerk-mean()-Y-mean()     
+- tBodyGyroJerk-mean()-Z-mean()      
+- tBodyGyroJerk-std()-X-mean()      
+- tBodyGyroJerk-std()-Y-mean()       
+- tBodyGyroJerk-std()-Z-mean()  
 
+#### Magnitudes
 Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
 
--tBodyAccMag-mean()-mean()          
--tBodyAccMag-std()-mean()          
--tGravityAccMag-mean()-mean()       
--tGravityAccMag-std()-mean()       
--tBodyAccJerkMag-mean()-mean()      
--tBodyAccJerkMag-std()-mean()      
--tBodyGyroMag-mean()-mean()         
--tBodyGyrMag-std()-mean()         
--tBodyGyroJerkMag-mean()-mean()     
--tBodyGyroJerkMag-std()-mean() 
+- tBodyAccMag-mean()-mean()          
+- tBodyAccMag-std()-mean()          
+- tGravityAccMag-mean()-mean()       
+- tGravityAccMag-std()-mean()       
+- tBodyAccJerkMag-mean()-mean()      
+- tBodyAccJerkMag-std()-mean()      
+- tBodyGyroMag-mean()-mean()         
+- tBodyGyrMag-std()-mean()         
+- tBodyGyroJerkMag-mean()-mean()     
+- tBodyGyroJerkMag-std()-mean() 
 
 
-
+#### Fast Fourier Transformation 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
--fBodyAcc-mean()-X-mean()           
--fBodyAcc-mean()-Y-mean()          
--fBodyAcc-mean()-Z-mean()           
+- fBodyAcc-mean()-X-mean()           
+- fBodyAcc-mean()-Y-mean()          
+- fBodyAcc-mean()-Z-mean()           
 
--fBodyAcc-std()-X-mean()           
--fBodyAcc-std()-Y-mean()            
--fBodyAcc-std()-Z-mean()           
+- fBodyAcc-std()-X-mean()           
+- fBodyAcc-std()-Y-mean()            
+- fBodyAcc-std()-Z-mean()           
 
--fBodyAccJerk-mean()-X-mean()       
--fBodyAccJerk-mean()-Y-mean()      
--fBodyAccJerk-mean()-Z-mean()       
+- fBodyAccJerk-mean()-X-mean()       
+- fBodyAccJerk-mean()-Y-mean()      
+- fBodyAccJerk-mean()-Z-mean()       
  
--fBodyAccJerk-std()-X-mean()       
--fBodyAccJerk-std()-Y-mean()       
--fBodyAccJerk-std()-Z-mean()       
+- fBodyAccJerk-std()-X-mean()       
+- fBodyAccJerk-std()-Y-mean()       
+- fBodyAccJerk-std()-Z-mean()       
 
--fBodyGyro-mean()-X-mean()          
--fBodyGyro-mean()-Y-mean()         
--fBodyGyro-mean()-Z-mean()          
+- fBodyGyro-mean()-X-mean()          
+- fBodyGyro-mean()-Y-mean()         
+- fBodyGyro-mean()-Z-mean()          
 
--fBodyGyro-std()-X-mean()          
--fBodyGyro-std()-Y-mean()           
--fBodyGyro-std()-Z-mean()          
+- fBodyGyro-std()-X-mean()          
+- fBodyGyro-std()-Y-mean()           
+- fBodyGyro-std()-Z-mean()          
 
--fBodyAccMag-mean()-mean()          
--fBodyAccMag-std()-mean()          
+- fBodyAccMag-mean()-mean()          
+- fBodyAccMag-std()-mean()          
 
--fBodyBodyAccJerkMag-mean()-mean()  
--fBodyBodyAccJerkMag-std()-mean() 
+- fBodyBodyAccJerkMag-mean()-mean()  
+- fBodyBodyAccJerkMag-std()-mean() 
 
--fBodyBodyGyroMag-mean()-mean()     
--fBodyBodyGyroMag-std()-mean()     
+- fBodyBodyGyroMag-mean()-mean()     
+- fBodyBodyGyroMag-std()-mean()     
 
--fBodyBodyGyroJerkMag-mean()-mean() 
--fBodyBodyGyroJerkMag-std()-mean() 
+- fBodyBodyGyroJerkMag-mean()-mean() 
+- fBodyBodyGyroJerkMag-std()-mean() 
       
 ## Transformations
 
