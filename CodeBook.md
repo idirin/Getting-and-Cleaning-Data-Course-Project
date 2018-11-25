@@ -1,7 +1,6 @@
----
-title: Getting and Cleaning Data Course Project
-output: html_document
----
+
+# Getting and Cleaning Data Course Project
+
 
 This document describes  tidy_dataset.txt file which  provides summary information generated from original source <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> . A full description is available at the site where the data was obtained:
 
@@ -177,7 +176,7 @@ For creating the 2nd dataset
 View(dataset2)
 3. Finally second  dataset is write as a flat file
 
-##Citation Request
-Citation Request:
+## Citation Request
+Original files and data by:
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
